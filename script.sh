@@ -80,6 +80,18 @@ asdf global crystal 0.29.0
 echo "Instalando Terminator"
 sudo apt install terminator
 
+echo "Instalando Spotify"
+sudo apt install spotify-client
+
+echo "Instalando Slack"
+sudo snap install slack --classic
+
+echo "Instalando DBeaver"
+cd ~
+wget https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
+chmod +x dbeaver-ce_latest_amd64.deb
+sudo dpkg -i dbeaver-ce_latest_amd64.deb
+
 echo "Instalando databases"
 sudo apt -y install postgresql redis-server
 sudo apt -y install postgresql-contrib
